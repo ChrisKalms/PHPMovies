@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHP Movies</title>  
+  <link rel="stylesheet" href="./style.css"/> 
+</head>
+
+<body>
+
+  <div class="page">
+
+  <div class="header-wrapper">
+    <h1 class="header">Php Movies Database</h1>
+  </div> <!-- close header-wrapper -->
+
+  <form id="search-movie-form"></form>
+
+  <div class="content">
+
+    <div class="search-wrapper">
+      <div class="search-field-wrapper">        
+        Title:
+        <input form="search-movie-form" id="title" class="search-field" type="text" name="title">     
+      </div> <!--end search-field-wrapper-->
+
+      <div class="search-field-wrapper">        
+        Genre:
+        <input form="search-movie-form" id="genre" class="search-field" type="text" name="genre">    
+      </div> <!--end search-field-wrapper-->
+
+      <div class="search-field-wrapper">          
+        Rating:
+        <input form="search-movie-form" id="rating" class="search-field" type="text" name="rating">      
+      </div> <!--end search-field-wrapper-->
+
+      <div class="search-field-wrapper">    
+        Year:
+        <input form="search-movie-form" id="year" class="search-field" type="text" name="year">        
+      </div> <!--end search-field-wrapper-->          
+
+      <input form="search-movie-form" class="submit-button" type="button" id="submit-form" value="Search Database">       
+
+    </div>  <!--end search-wrapper-->
+    
+    
+    <div class="table-wrapper">
+      <table id="movies-table" class="display-table">
+        <tr>         
+          <th>Title</th>
+          <th>Studio</th>
+          <th>Status</th> 
+          <th>Sound</th> 
+          <th>Versions</th>
+          <th>RecRetPrice</th> 
+          <th>Rating</th> 
+          <th>Year</th>
+          <th>Genre</th> 
+          <th>Aspect</th>
+        </tr>
+        <tbody id="table-body">
+
+        </tbody>
+      </table> 
+    </div> <!--end table-->
+
+  </div> <!--end content-->
+</div> <!-- end page -->
+
+<script src="app.js"></script>
+
+</body>
+</html>
+
+
