@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(iron-man.png);
+    background-size: cover;
+}
+.page{
+    position: static;
+    height:70%;
+    max-height: 70%;
+}
+.header{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px rgb(255, 100, 10);
+}
+.header-wrapper{
+    background-color: rgb(55,55,55);
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+.content{   
+    box-sizing: border-box;
+    position: relative;
+    margin: 100px auto 10px auto ;    
+    width: 70vw;
+    min-height: 50%;           
+    height:inherit;    
+}
+.search-wrapper {     
+    text-align:center;        
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));     
+    grid-column-gap: 2em;
+    grid-row-gap: .5em;
+}
+.search-field-wrapper{
+    background-color: rgb(230, 236, 240);
+    border: 1px solid #dddddd ;
+    border-radius: 25px;
+    padding:5px;
+    white-space: nowrap;
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+.search-field {
+    width: 80%;
+    right: 0;
+    background-color: rgb(230, 236, 240);
+    height: auto;
+    outline: none;
+    border-style: none;
+    margin-left: 5px;
+}
+.submit-button {  
+    border: none;
+    font-family: sans-serif;  
+    font-size: large;
+    color: white;
+    background-color: rgb(29, 161, 242);
+    outline: none;
+    border-radius: 25px;
+    width: 100%;
+}
+.submit-button:hover {
+    background-color: rgb(75,10,255);
+    box-shadow: 10px rgb(75,10,255);
+}
+.display-table{
+    opacity: 80%;
+    table-layout: fixed;
+    background-color: #9f9f9f;
+    width: 100%;
+    min-width: 700px;
+    max-height: 20%;       
+    margin-top: 15px;
+    border: solid black 1px;
+}
+.table-wrapper{
+    position: relative;    
+    height: inherit;
+}
+td,th{
+    overflow: hidden;
+    /*word-wrap: break-word;*/
+} 
+.row-1{
+    background: #999999;
+}
+.row-0{
+    background: #777777;
+}
+
+
